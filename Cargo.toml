@@ -1,0 +1,21 @@
+[package]
+name = "wutong-networkd"
+description = "Optional, user-controlled Wutong Network background daemon (identity, sync, federation) with authenticated local IPC"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "AGPL-3.0-only"
+repository = "https://github.com/project-wutong/wutong-networkd"
+
+[dependencies]
+wutong-core = { git = "https://github.com/project-wutong/wutong-core", branch = "main" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+anyhow = "1"
+
+[dev-dependencies]
+tempfile = "3"
+
+[lints.rust]
+unsafe_code = "forbid"

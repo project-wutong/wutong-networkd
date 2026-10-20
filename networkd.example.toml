@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+# wutong-networkd is opt-in: nothing runs until you set enabled = true.
+enabled = false
+socket = "/run/user/1000/wutong/networkd.sock"
+
+[features]
+sync = false
+federation = false
+agents = false
